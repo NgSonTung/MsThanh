@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ClassStyleBinding } from './components/class-style-binding-ex/class-style-binding';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { PropBindingComponent } from './prop-binding/prop-binding.component';
 
@@ -8,7 +9,7 @@ import { PropBindingComponent } from './prop-binding/prop-binding.component';
   standalone: true,
   imports: [
     RouterOutlet,
-    EventBindingComponent,
+    ClassStyleBinding,
     EventBindingComponent,
     PropBindingComponent,
   ],
