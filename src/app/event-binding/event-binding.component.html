@@ -1,0 +1,16 @@
+<h1>Event Binding Example (1)</h1>
+<button (click)="onButtonClick()">Click Me!</button>
+<p>{{ message }}</p>
+
+<h1>Property Binding Example (2)</h1>
+<input (keyup)="onKeyUp($event)" />
+<p>{{ text }}</p>
+
+<h1>Property Binding Example (3)</h1>
+<input
+  (keydown.shift)="onShiftDown($event)"
+  (keyup.shift)="onShiftUp($event)"
+  (keydown.alt.t)="onKeysDown($event)"
+  (keyup.alt.t)="onKeysUp($event)"
+/>
+<p>{{ text2 }}</p>
