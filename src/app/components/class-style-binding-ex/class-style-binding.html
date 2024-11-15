@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>Class and Style Binding Example</h2>
+
+  <p [class.active]="isActive">
+    This paragraph will have the 'active' class when 'isActive' is true.
+  </p>
+
+  <p [ngClass]="{'active': isActive, 'highlighted': isHighlighted}">
+    This paragraph can have both 'active' and 'highlighted' classes dynamically applied.
+  </p>
+
+  <button (click)="toggleActive()">Toggle Active Class</button>
+  <button (click)="toggleHighlight()">Toggle Highlight Class</button>
+
+  <p [style.background-color]="bgColor" [style.font-size.px]="fontSize">
+    This paragraph’s background color and font size are controlled by component variables.
+  </p>
+
+  <p [ngStyle]="{'background-color': bgColor, 'font-size': fontSize + 'px'}">
+    This paragraph also has dynamically applied styles using ngStyle.
+  </p>
+
+  <button (click)="changeStyles()">Change Styles</button>
+</div>
