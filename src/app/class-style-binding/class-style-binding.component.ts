@@ -4,20 +4,20 @@ import {NgClass, NgStyle} from "@angular/common";
 
 @Component({
   selector: 'app-class-style-binding',
-  templateUrl: './class-style-binding.html',
+  templateUrl: './class-style-binding.component.html',
   standalone: true,
   imports: [
     NgClass,
     NgStyle
   ],
-  styleUrls: ['./class-style-binding.scss']
+  styleUrls: ['./class-style-binding.component.scss']
 })
-export class ClassStyleBinding {
-  isActive = true;  // Controls the 'active' class
+export class ClassStyleBindingComponent {
+  isActive = false;  // Controls the 'active' class
   bgColor = '#717379FF'; // Controls the background color style
   fontSize = 18;    // Controls the font size style
   isHighlighted = false; // Controls the 'highlighted' class
-
+  isVisible = true; // Controls the 'hidden' class
   toggleActive() {
     this.isActive = !this.isActive;
   }
