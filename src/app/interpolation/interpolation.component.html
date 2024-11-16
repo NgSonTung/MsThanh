@@ -1,0 +1,12 @@
+<div>
+  <h2>Interpolation Recalculation Example</h2>
+  <p>Current Time: {{ getCurrentTime() }}</p>
+</div>
+
+<div>
+  <h2>Pipe Example</h2>
+  <p>Current Time: {{ randomNumber | currentTime }}</p>
+</div>
+<button (click)="triggerChange()">Trigger DOM Interaction</button>
+<button (click)="onRandom()">Random</button>
+<button (click)="onNotRandom()">Not Random</button>
